@@ -9,6 +9,8 @@
     --text-products: Poppins-Medium;
     --menu-font: Poppins-bold;
     --header-title-font: Poppins-bold;
+    --banner-subtitle-font: Poppins-Light;
+    --banner-title-font: Poppins;
 }
 
 * {
@@ -20,33 +22,33 @@
 
 @font-face {
     font-family: Poppins;
-    src: url(recursos/fonts/Poppins-Regular.ttf);
+    src: url('recursos/fonts/Poppins-Regular.ttf');
 }
 
 @font-face {
     font-family: Poppins-bold;
-    src: url(recursos/fonts/Poppins-Bold.ttf);
+    src: url('recursos/fonts/Poppins-Bold.ttf');
 }
 
 @font-face {
     font-family: Poppins-extrabold;
-    src: url(recursos/fonts/Poppins-ExtraBold.ttf);
+    src: url('recursos/fonts/Poppins-ExtraBold.ttf');
 }
 
 @font-face {
     font-family: Poppins-Light;
-    src: url(recursos/fonts/Poppins-Light.ttf);
+    src: url('recursos/fonts/Poppins-Light.ttf');
 }
 
 @font-face {
     font-family: Poppins-Medium;
-    src: url(recursos/fonts/Poppins-Medium.ttf);
+    src: url('recursos/fonts/Poppins-Medium.ttf');
 }
 
 /* Header */
 
 header {
-    background-image: url(recursos/images/banner.jpg);
+    background-image: url('recursos/images/banner.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     display: flex;
@@ -179,7 +181,7 @@ nav .menu-mobile {
     padding-top: 60px;
 }
 
-.products h3 {
+.products .section-title {
     text-transform: uppercase;
     font-family: var(--text-products);
     font-size: 26px;
@@ -230,6 +232,63 @@ nav .menu-mobile {
 
 /*End Section Products*/
 
+/*Section Banner*/
+
+.banner {
+    background-color: var(--primary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 70px;
+}
+
+.banner-content {
+    display: flex;
+    justify-content: center;
+}
+
+.banner-content-text {
+    max-width: 500px;
+    color: var(--bg-light);
+    display: flex;
+    flex-direction: column;
+}
+
+.banner-title {
+    font-size: 48px;
+    font-family: var(--banner-title-font);
+}
+
+.banner-subtitle {    
+    font-size: 20px;
+    font-family: var(--banner-subtitle-font);
+}
+
+.btn-primary-full {
+    color: var(--bg-light);
+    background-color: var(--second-color);
+    padding: 15px 60px;
+    border: 2px solid var(--second-color);
+    text-decoration: none;
+}
+
+.btn-primary-full:hover {
+    color: var(--bg-light);
+    border: 2px solid var(--second-color);
+    background-color: var(--primary-color);
+}
+
+.banner-content img {
+    margin-left: 90px;
+}
+
+/*End Section Banner*/
+
+/*Section Reviws*/
+
+
+/*End Section Reviws*/
+
 
 @media (max-width: 800px) {
 
@@ -239,6 +298,24 @@ nav .menu-mobile {
 
     nav .menu-screen {
         display: none;
+    }
+
+    .banner-content { 
+        flex-direction: column;
+    }
+
+    .banner-subtitle {
+        font-size: 15px;
+    }
+
+    .banner-title{      
+        font-size: 44px;
+    }
+
+    .banner-content img {
+        margin: 80px 10px;
+        width: 95%;
+        height: 95%;
     }
 }
 
@@ -280,5 +357,17 @@ nav .menu-mobile {
     .card {
         max-width: 500px;
     }
-
 }
+
+@media (max-width: 1100px) {
+    
+    .products-container {    
+        width: 96%;
+    }
+
+    .banner-content {
+        flex-direction: column;
+    }
+}
+
+
