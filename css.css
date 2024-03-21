@@ -181,7 +181,7 @@ nav .menu-mobile {
     padding-top: 60px;
 }
 
-.products .section-title {
+.section-title {
     text-transform: uppercase;
     font-family: var(--text-products);
     font-size: 26px;
@@ -286,8 +286,108 @@ nav .menu-mobile {
 
 /*Section Reviws*/
 
+.reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.review-card {
+    width: 800px;
+}
+
+.review-card img {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.review-card h5 {
+    font-size: 25px;
+    margin-bottom: 20px;
+}
 
 /*End Section Reviws*/
+
+/*Section Form*/
+
+.contact {
+    background-image: url('recursos/images/contact_g.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+
+.section-contact {
+    text-transform: uppercase;
+    color: var(--bg-light);
+    font-family: var(--text-products);
+    font-size: 26px;
+    border-bottom: 1px solid var(--bg-light);
+    margin-bottom: 25px;    
+}
+
+.contact-from {
+    border: 1px solid var(--bg-light);
+    padding: 50px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-input {
+    border: 1px solid var(--bg-light);
+    padding: 5px;
+    background-color: transparent;
+    width: 100%;
+    height: 40px;
+    margin: 10px 0px;
+    padding: 10px;
+    box-shadow: none;
+    outline: none;
+    color: var(--bg-light);
+}
+
+::placeholder {
+    color: var(--bg-light);
+}
+
+::-moz-placeholder {
+    color: var(--bg-light);
+}
+
+#menssage {
+    padding: 50px 10px 50px;
+}
+
+.contact-btn {
+    cursor: pointer;
+    color: var(--bg-light);
+    padding: 15px 60px;
+    border: 2px solid var(--second-color);
+    background-color: var(--second-color);
+    text-decoration: none;
+    max-width: 150px;
+    border-radius: 25px;
+    margin-top: 40px;
+}
+
+.contact-btn:hover {
+    cursor: pointer;
+    color: var(--second-color);
+    background-color: transparent;
+}
+
+/*End Section Form*/
 
 
 @media (max-width: 800px) {
@@ -316,6 +416,14 @@ nav .menu-mobile {
         margin: 80px 10px;
         width: 95%;
         height: 95%;
+    }
+
+    .review-card {
+        width: 90%;
+    }
+
+    .contact-from {
+        max-width: 450px;
     }
 }
 
