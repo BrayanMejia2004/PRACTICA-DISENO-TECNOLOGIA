@@ -389,6 +389,95 @@ nav .menu-mobile {
 
 /*End Section Form*/
 
+/*Section Footer*/
+
+footer {
+    background-image: url('recursos/images/footer.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.footer-content {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 50px;    
+    margin-bottom: 50px;
+}
+
+.copyright {
+    width: 1200px;
+    color: var(--bg-light);
+    border-top: 1px solid var(--bg-light);
+    text-align: center;
+    padding: 10px;
+    margin: 10px;
+}
+
+.footer-card {
+    width: 300px;
+    padding: 20px;
+    color: var(--bg-light);
+}
+
+.social-icon a {
+    color: var(--bg-light);
+    font-size: 25px;
+    margin: 5px;
+}
+
+.footer-card h5 {
+    font-size: 15px;
+}
+
+.footer-card p {
+    width: 80%;
+    padding-top: 10px;
+    font-size: 12px;
+    text-align: justify;
+}
+
+.footer-card form {
+    display: flex;
+    flex-direction: column;
+}
+
+.sub-input {
+    border-radius: 10px;
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 0;
+    font-family: var(--text-products);
+}
+
+.sub-input::placeholder {
+    color: var(--dark-color);
+}
+
+.sub-btn {
+    cursor: pointer;
+    width: 50%;
+    color: var(--bg-light);
+    padding: 8px;
+    border: 2px solid var(--second-color);
+    background-color: var(--second-color);
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+.sub-btn:hover {
+    cursor: pointer;
+    color: var(--second-color);
+    background-color: transparent;
+}
+
+/*End Section Footer*/
+
 
 @media (max-width: 800px) {
 
@@ -424,6 +513,12 @@ nav .menu-mobile {
 
     .contact-from {
         max-width: 450px;
+    }
+
+    .footer-content,
+    .copyright {
+        width: 96%;
+        font-size: 15px;
     }
 }
 
