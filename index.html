@@ -1,60 +1,64 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css.css" />
     <title>Pagina Web Tecnologia</title>
-</head>
+  </head>
 
-<body>
-
+  <body>
     <!--Header-->
 
     <header>
+      <nav>
+        <a href="index.html">
+          <img
+            src="recursos/images/logo.png"
+            alt="Logo"
+            width="78"
+            height="82"
+          />
+        </a>
 
-        <nav>
+        <ul class="menu-screen">
+          <li><a href="/" class="selected">Inicio</a></li>
+          <li><a href="/#productos">Productos</a></li>
+          <li><a href="/#ofertas">Ofertas</a></li>
+          <li><a href="/#Contactanos">Contactanos</a></li>
+          <li>
+            <a href="#"><ion-icon name="search"></ion-icon></a>
+          </li>
+          <li><a href="#">Login</a></li>
+        </ul>
 
-            <a href="index.html">
-                <img src="recursos/images/logo.png" alt="Logo" width="78" height="82">
-            </a>
+        <img
+          class="menu-mobile"
+          src="recursos/images/menu_icon.png"
+          alt="Menu"
+          width="36"
+          height="21"
+        />
+      </nav>
 
-            <ul class="menu-screen">
-                <li> <a href="#" class="selected">Home</a></li>
-                <li> <a href="#">About</a></li>
-                <li> <a href="#">Computer</a></li>
-                <li> <a href="#">Laptot</a></li>
-                <li> <a href="#">Products</a></li>
-                <li> <a href="#">Contact Us</a></li>
-                <li> <a href="#"><ion-icon name="search"></ion-icon></a></li>
-                <li> <a href="#">Login</a></li>
-            </ul>
+      <div class="header-content">
+        <div class="header-content-text">
+          <h3 class="header-subtitle">Ordenadores y Portátiles</h3>
+          <h1 class="header-title">Accesorios</h1>
+          <p>
+            "¡Explora un mundo de tecnología sin límites! Desde potentes
+            computadores hasta portátiles ultraligeros y accesorios innovadores.
+            Tu próxima experiencia tecnológica te espera aquí."
+          </p>
 
-            <img class="menu-mobile" src="recursos/images/menu_icon.png" alt="Menu" width="36" height="21">
-
-        </nav>
-
-        <div class="header-content">
-            <div class="header-content-text">
-                <h3 class="header-subtitle">Computer And Laptop</h3>
-                <h1 class="header-title">Accessories</h1>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Fuga, possimus! Quis dolor dolorem
-                    officiis,
-                    sunt
-                    veniam placeat numquam optio consectetur explicabo hic fugiat repellat odit aliquid corporis totam
-                    ullam
-                    vel!.
-                </p>
-
-                <div class="header-button">
-                    <a href="#" class="btn">Buy Now</a>
-                    <a href="#" class="btn">Contact</a>
-                </div>
-            </div>
-
-            <img src="recursos/images/pc.png" alt="Pc" width="588" height="235">
+          <div class="header-button">
+            <a href="#" class="btn">Comprar Ahora</a>
+            <a href="#" class="btn">Contacto</a>
+          </div>
         </div>
+
+        <img src="recursos/images/pc.png" alt="Pc" width="588" height="235" />
+      </div>
     </header>
 
     <!--End Header-->
@@ -62,101 +66,116 @@
     <!--Section Tarjetas-->
 
     <section class="cards">
-
-        <div class="card">
-            <img src="recursos/images/thr.png" alt="imagenes" width="118" height="102">
-            <h5>Computer</h5>
-            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsam, omnis quod deleniti adipisci beatae
-                voluptatibus fugiat est commodi dolore natus nemo blanditiis alias at magnam eligendi? Laboriosam
-                similique officia ab.</p>
-        </div>
-        <div class="card">
-            <img src="recursos/images/thr1.png" alt="imagenes" width="118" height="102">
-            <h5>Laptop</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit minus nostrum voluptate, sequi dolorum
-                magni aut aliquid quam minima totam laudantium deserunt fugiat, similique mollitia asperiores labore ex
-                quibusdam. Optio!</p>
-        </div>
-        <div class="card">
-            <img src="recursos/images/thr2.png" alt="imagenes" width="118" height="102">
-            <h5>Tablet</h5>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Non excepturi commodi dolorum facilis
-                consequuntur nihil ex dolores numquam, in velit quidem sit qui tempore ipsum autem eum obcaecati?
-                Excepturi, et?</p>
-        </div>
-
+      <div class="card">
+        <img
+          src="recursos/images/thr.png"
+          alt="imagenes"
+          width="118"
+          height="102"
+        />
+        <h5>Computer</h5>
+        <p>
+          "Potencia y rendimiento sin límites. Descubre nuestra selección de
+          computadoras para llevar tu trabajo y entretenimiento al siguiente
+          nivel."
+        </p>
+      </div>
+      <div class="card">
+        <img
+          src="recursos/images/thr1.png"
+          alt="imagenes"
+          width="118"
+          height="102"
+        />
+        <h5>Laptop</h5>
+        <p>
+          "Rendimiento óptimo en cada tarea. Nuestras laptops ofrecen la
+          combinación perfecta de velocidad, portabilidad y diseño para
+          acompañarte en todo momento."
+        </p>
+      </div>
+      <div class="card">
+        <img
+          src="recursos/images/thr2.png"
+          alt="imagenes"
+          width="118"
+          height="102"
+        />
+        <h5>Tablet</h5>
+        <p>
+          "Descubre un mundo de posibilidades. Nuestras tablets son compactas,
+          versátiles y están llenas de funciones para brindarte entretenimiento,
+          productividad y comodidad en un solo dispositivo."
+        </p>
+      </div>
     </section>
 
     <!--End Section Tarjetas-->
 
-
     <!--Section Products-->
 
-    <section class="products">
+    <section class="products" id="productos">
+      <h3 class="section-title">Nuestros Productos</h3>
 
-        <h3 class="section-title">Our Products</h3>
-
-        <div class="products-container">
-
-            <div class="product-card">
-                <img src="recursos/images/product1.png" alt="Imagen">
-                <a href="#">Computer</a>
-            </div>
-            <div class="product-card">
-                <img src="recursos/images/product2.png" alt="Imagen">
-                <a href="#">Laptop</a>
-            </div>
-            <div class="product-card">
-                <img src="recursos/images/product3.png" alt="Imagen">
-                <a href="#">Tablet</a>
-            </div>
-            <div class="product-card">
-                <img src="recursos/images/product4.png" alt="Imagen">
-                <a href="#">Speakers</a>
-            </div>
-            <div class="product-card">
-                <img src="recursos/images/product5.png" alt="Imagen1">
-                <a href="#">Internet</a>
-            </div>
-            <div class="product-card">
-                <img src="recursos/images/product6.png" alt="Imagen2">
-                <a href="#">Hardisk</a>
-            </div>
-            <div class="product-card">
-                <img src="recursos/images/product7.png" alt="Imagen3">
-                <a href="#">Rams</a>
-            </div>
-            <div class="product-card">
-                <img src="recursos/images/product8.png" alt="Imagen4">
-                <a href="#">Bettery</a>
-            </div>
-            <div class="product-card">
-                <img src="recursos/images/product9.png" alt="Imagen5">
-                <a href="#">Drive</a>
-            </div>
-
-            <a href="#" class="btn-secondary">See More</a>
+      <div class="products-container">
+        <div class="product-card">
+          <img src="recursos/images/product1.png" alt="Imagen" />
+          <a href="#">Teclado</a>
+        </div>
+        <div class="product-card">
+          <img src="recursos/images/product2.png" alt="Imagen" />
+          <a href="#">Mouse</a>
+        </div>
+        <div class="product-card">
+          <img src="recursos/images/product3.png" alt="Imagen" />
+          <a href="#">Cámaras</a>
+        </div>
+        <div class="product-card">
+          <img src="recursos/images/product4.png" alt="Imagen" />
+          <a href="#">Parlantes</a>
+        </div>
+        <div class="product-card">
+          <img src="recursos/images/product5.png" alt="Imagen1" />
+          <a href="#">Internet</a>
+        </div>
+        <div class="product-card">
+          <img src="recursos/images/product6.png" alt="Imagen2" />
+          <a href="#">Discos Duros</a>
+        </div>
+        <div class="product-card">
+          <img src="recursos/images/product7.png" alt="Imagen3" />
+          <a href="#">Memorias Ram</a>
+        </div>
+        <div class="product-card">
+          <img src="recursos/images/product8.png" alt="Imagen4" />
+          <a href="#">Baterías</a>
+        </div>
+        <div class="product-card">
+          <img src="recursos/images/product9.png" alt="Imagen5" />
+          <a href="#">Lector de CD</a>
         </div>
 
+        <a href="#" class="btn-secondary">Ver Más Productos</a>
+      </div>
     </section>
 
     <!--End Section Products-->
 
     <!--Section Banner-->
 
-    <section class="banner">
-        <div class="banner-content">
-            <div class="banner-content-text">
-                <h3 class="banner-subtitle">Every Computer and Laptop</h3>
-                <h2 class="banner-title">Up to 40% off !</h2>
+    <section class="banner" id="ofertas">
+      <div class="banner-content">
+        <div class="banner-content-text">
+          <h3 class="banner-subtitle">Todos los ordenadores y portátiles</h3>
+          <h2 class="banner-title">¡Hasta un 40% de descuento!</h2>
 
-                <div class="header-button">
-                    <a href="#" class="btn-primary-full">Shop Now</a>
-                </div>
-            </div>
-
-            <img src="recursos/images/pc.png" alt="Pc" width="588" height="235">
+          <div class="header-button">
+            <a href="#" class="btn-primary-full">Comprar Ahora</a>
+          </div>
         </div>
+
+        <img src="recursos/images/pc.png" alt="Pc" width="588" height="235" />
+      </div>
     </section>
 
     <!--End Section Banner-->
@@ -164,40 +183,64 @@
     <!--Section Reviws-->
 
     <section class="reviews">
+      <h3 class="section-title">OPINIÓN DEL CLIENTE</h3>
 
-        <h3 class="section-title">CUSTOMER REVIEW</h3>
+      <div class="review-card">
+        <img src="recursos/images/cos.png" alt="Comillas" />
 
-        <div class="review-card">
+        <h5>Sandy Miller</h5>
 
-            <img src="recursos/images/cos.png" alt="Comillas">
-
-            <h5>Sandy Miller</h5>
-
-            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Animi tempore, quaerat vel consequatur labore,
-                soluta dolorum rem, alias ipsa nostrum inventore distinctio veritatis eveniet illum magnam aperiam
-                commodi explicabo? Quidem.</p>
-        </div>
-
+        <p>
+          Recientemente adquirí un portátil en CLA y debo decir que estoy
+          extremadamente satisfecho con mi compra. La experiencia de compra fue
+          fácil y rápida, y el equipo de atención al cliente fue
+          excepcionalmente servicial y amable. El portátil que recibí superó mis
+          expectativas en términos de rendimiento y calidad. Además, el envío
+          fue rápido y llegó en perfectas condiciones. Definitivamente
+          recomendaría CLA a cualquiera que esté buscando productos tecnológicos
+          de alta calidad y un servicio excepcional.
+        </p>
+      </div>
     </section>
 
     <!--End Section Reviws-->
 
     <!--Section Form-->
 
-    <section class="contact">
+    <section class="contact" id="Contactanos">
+      <h3 class="section-contact">Contáctanos Ahora</h3>
 
-        <h3 class="section-contact ">Contact Now</h3>
-
-        <form class="contact-from" action="#" method="post">
-
-            <input type="text" name="name" id="name" class="contact-input" placeholder="Name">
-            <input type="email" name="email" id="email" class="contact-input" placeholder="Email">
-            <input type="number" name="phone" id="phone" class="contact-input" placeholder="Phone Number">
-            <input type="text" name="menssage" id="menssage" class="contact-input" placeholder="Menssage">
-            <input type="submit" value="SEND" class="contact-btn">
-
-        </form>
-
+      <form class="contact-from" action="#" method="post">
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="contact-input"
+          placeholder="Nombre"
+        />
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="contact-input"
+          placeholder="Correo Electrónico"
+        />
+        <input
+          type="number"
+          name="phone"
+          id="phone"
+          class="contact-input"
+          placeholder="Número De Celular"
+        />
+        <input
+          type="text"
+          name="menssage"
+          id="menssage"
+          class="contact-input"
+          placeholder="Mensaje"
+        />
+        <input type="submit" value="Enviar" class="contact-btn" />
+      </form>
     </section>
 
     <!--End Section Form-->
@@ -205,53 +248,68 @@
     <!--Section Footer-->
 
     <footer>
+      <div class="footer-content">
+        <div class="footer-card">
+          <img
+            src="recursos/images/logo1.png"
+            alt="Logo"
+            width="78"
+            height="82"
+          />
 
-        <div class="footer-content">
-
-            <div class="footer-card">
-
-                <img src="recursos/images/logo1.png" alt="Logo" width="78" height="82">
-
-                <div class="social-icon">
-                    <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
-                    <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
-                </div>
-            </div>
-
-            <div class="footer-card" >
-                <h5>About Us</h5>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-            </div>
-
-            <div class="footer-card">
-                <h5>Contact Us</h5>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-            </div>
-
-            <div class="footer-card">
-
-                <h5>Newsletter</h5>
-
-                <form action="#" method="post">
-                    <input type="email" class="sub-input" placeholder="Entre you Email">
-                    <input type="submit" value="SUBSCRIBE" class="sub-btn">
-                </form>
-            </div>
+          <div class="social-icon">
+            <a href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+            <a href="#"><ion-icon name="logo-instagram"></ion-icon></a>
+          </div>
         </div>
 
-        <div class="copyright">
-            <p>@ 2024 ALL Rights Reserved. Design by Free Html Templates</p>
+        <div class="footer-card">
+          <h5>Sobre Nosotros</h5>
+          <p>
+            Somos CLA, tu destino confiable para todo lo relacionado con la
+            tecnología. Con una selección cuidadosamente curada de productos de
+            calidad y un equipo apasionado, estamos aquí para hacer que tu
+            experiencia de compra sea excepcional. ¡Descubre la innovación con
+            nosotros!
+          </p>
         </div>
 
+        <div class="footer-card">
+          <h5>Contáctanos</h5>
+          <p>+57 (302-454-6679)</p>
+          <p>Colombia</p>
+        </div>
+
+        <div class="footer-card">
+          <h5>Comunicados</h5>
+
+          <form action="#" method="post">
+            <input
+              type="email"
+              class="sub-input"
+              placeholder="Ingresa Tu Email"
+            />
+            <input type="submit" value="SUBSCRIBETE" class="sub-btn" />
+          </form>
+        </div>
+      </div>
+
+      <div class="copyright">
+        <p>@ 2024 ALL Rights Reserved. Design by Free Html Templates</p>
+      </div>
     </footer>
 
     <!--End Section Footer-->
+  </body>
 
-</body>
-
-<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
-<script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
-
+  <script
+    type="module"
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+  ></script>
+  <script
+    nomodule
+    src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+  ></script>
 </html>
